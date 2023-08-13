@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 Route::get('/column', [\App\Http\Controllers\ColumnController::class, 'index']);
+Route::get('/location', [\App\Http\Controllers\ColumnController::class, 'locations']);

@@ -14,9 +14,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind('Illuminate\Pagination\LengthAwarePaginator',function ($app,$options){
-            return new CustomLengthAwarePaginator($options['items'], $options['total'], $options['perPage'], $options['currentPage'] , $options['options']);
-        });
+//        $this->app->bind('Illuminate\Pagination\LengthAwarePaginator',function ($app,$options){
+//            return new CustomLengthAwarePaginator($options['items'], $options['total'], $options['perPage'], $options['currentPage'] , $options['options']);
+//        });
     }
 
     /**
