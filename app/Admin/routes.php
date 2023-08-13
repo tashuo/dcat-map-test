@@ -15,4 +15,5 @@ Route::group([
     $router->get('/', 'HomeController@index');
     $router->resource('locations', 'LocationController');
     $router->resource('columns', 'ColumnController');
+    $router->get('custom/map', 'FormController@customMap'); // 自定义地图视图
 });
